@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Parlor Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #713e5a; /* Light grey background */
+        }
+        .header {
+            background-color: #333; /* Dark grey header */
+            color: #fff; /* White text */
+            text-align: center;
+            padding: 20px;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: #333; /* Dark grey navigation bar */
+        }
+        .topnav a {
+            float: left;
+            color: #fff; /* White text */
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: #ddd; /* Light grey on hover */
+            color: #333; /* Dark grey text on hover */
+        }
+       .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+       }
+       
+        
+        .leftcolumn {
+            flex: 75%; /* 75% width for main content */
+            background-color: #fff; /* White background */
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .rightcolumn {
+            flex: 25%; /* 25% width for sidebar */
+            background-color: #f3f3f3; /* Light grey background */
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .abc {
+            background-color: #c99da3;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Box shadow */
+            
+        }
+        .footer {
+            background-color: #333; /* Dark grey footer */
+            color: #fff; /* White text */
+            text-align: center;
+            padding: 20px;
+        }
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                flex: 100%; /* Full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Beauty Parlor</h1>
+        <p>Your one-stop destination for beauty services</p>
+    </div>
+    
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact Us</a>
+    </div>
+    
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="abc">
+                <h2>Welcome to Our Beauty Parlor</h2>
+                <p>Explore a wide range of beauty services tailored just for you.</p>
+                <p>Our experienced professionals ensure the best experience and results.</p>
+            </div>
+            <div class="abc">
+                <h2>Our Services</h2>
+                <p>Discover our extensive list of services including:</p>
+                <ul>
+                    <li>Hair Styling</li>
+                    <li>Makeup</li>
+                    <li>Facials</li>
+                    <li>Manicure & Pedicure</li>
+                    <li>Spa Treatments</li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="abc">
+                <h2>About Us</h2>
+                <p>Learn more about our beauty parlor and our team of experts.</p>
+            </div>
+            <div class="abc">
+                <h2>Opening Hours</h2>
+                <p><strong>Monday - Friday:</strong> 9:00 AM - 8:00 PM</p>
+                <p><strong>Saturday:</strong> 10:00 AM - 6:00 PM</p>
+                <p><strong>Sunday:</strong> Closed</p>
+            </div>
+            <div class="abc">
+                <h2>Location</h2>
+                <p>123 Beauty Street</p>
+                <p>City, State, Zip Code</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Beauty Parlor. All rights reserved.</p>
+    </div>
+</body>
+</html>
