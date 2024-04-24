@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <style>
+            body{
+                background-color: #ba9074;
+              /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWaCiIdJNKyH2bMFIJfYczjwQWzm0lJGd5Cw&s);*/
+                background-size: cover;
+                text-align: justify;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .jumbotron{
+                background-color: #8b6a5d;
+                color: black;
+                
+            }
+            
+             .card {
+                transition: transform 0.3s;
+            }
+
+            .card:hover {
+                transform: scale(1.05);
+                background-color:black;
+                color:white
+            }
+            .footer {
+            background-color: #8b6a5d; 
+            color: black; 
+            text-align: center;
+            padding: 20px;
+        }
+
+        .navbar-nav .nav-link:hover {
+        color: white;
+        background-color: #6c757d; /* Change background color on hover */
+    }
+
+        
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                flex: 100%; /* Full width on smaller screens */
+            }
+        }
+            
+
+        </style>
+
+        <!--navbar-->
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXeAlXa1DRKMECQtG3YUvfgHW5TbQ10yL2WA&s" alt="Jewelry Logo" height="50"> 
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Category
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Diamond</a></li>
+                      <li><a class="dropdown-item" href="#">Gold</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Silver</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex me-3" role="search">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </head>
+    <body>
+        
+        <!-- Jumbotron -->
+<div class=" mt-1 p-3 jumbotron text-center">
+    <h1>Welcome to our Jewellery Shop</h1>
+    <p>Discover our stunning collection of fine jewellery</p>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card mb-3">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROGB9uj2QB3tYYzKEu4gEcYhCVWQSYAKjv_A&s" class="card-img-top" alt="Diamond">
+          <div class="card-body">
+            <p class="card-text">Elegance and luxury. The Jewellery Room's range of diamond necklaces offers timeless and handcrafted variants created with exceptional, high-quality diamonds. We have gathered necklaces from the best international designers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card mb-3">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfP_970PYjY6TbfZ4M0V2X_Vu0mO8boAZarA&s" class="card-img-top" alt="Diamond">
+          <div class="card-body">
+            <p class="card-text">Earrings are the perfect gift to celebrate any number of special occasions. From birthdays to wedding anniversaries, the endless options at Royale Diamonds are sure to fit any wearer's personal style and preferences. All Diamonds are Set under the Microscope. The Colour of Gold can also be customised.</p>
+          </div>
+        </div>
+      </div>
+    
+
+  <div class="col-md-3">
+    <div class="card mb-3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7bI2JiJFXWT9wUMhxB8S2VzLgVE4hUhGnzg&s" class="card-img-top" alt="Diamond">
+      <div class="card-body">
+        <p class="card-text">This KUNDAN MEENAKARI GOLD PLATED BRIDAL BAJUBAND is skillfully handcrafted with a silver alloy and very high-quality imitation ruby quartz and kundan. It is then given a fine gold rhodium plating to create an authentic and eye-catching look. The unique design makes it ideal for special occasions.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="col-md-3">
+    <div class="card mb-3">
+      <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Diamond">
+      <div class="card-body">
+        <p class="card-text"> Our diamonds are beautiful, rare and responsibly sourced. Our diamond engagement rings hold a simple promise of eternal love and represent the timeless bond between two people. Discover an exquisite selection of diamond engagement rings, from statement rings to delicate solitaire diamond rings, find a ring worthy of wearing forever.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Bansari Jewellery, All rights reserved.</p>+
+</div>
+
+    </body>
+    </html>

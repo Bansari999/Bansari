@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myFunction(){
+                document.getElementById("demo2").innerHTML = "paragraph changed."
+            }
+        </script>
+    </head>
+    <body>
+        <h1>WHat javascript can do?</h1>
+        <p id="demo">javascript can change the html element.</p>
+        <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Clike Me!</button>
+
+        <hr>
+        <p id="demo1" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo1').style.display='block'">Show!</button>
+<hr>
+<h2>Demo JavaScript in Head</h2>
+
+<p id="demo2">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<hr>
+<h1>inner HTML output</h1>
+<p id="demo3">sum</p>
+<script>
+    document.getElementById("demo3").innerHTML = 5 + 6;</script>
+
+    <hr>
+    <h1>use document.write</h1>
+    <p id="demo4">This is my first paragraph</p>
+
+    <script>
+        document.write(5 + 5);
+    </script>
+
+    <hr>
+    <h1>Window alert</h1>
+    <p id="demo5">Hello</p>
+    <script>
+        window.alert(4 + 4);
+    </script>
+    <hr>
+    <h2>Activate Debugging</h2>
+
+<p>F12 on your keyboard will activate debugging.</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+
+<script>
+console.log(5 + 6);
+</script>
+<hr>
+<h1>using print method</h1>
+<p>print this page</p>
+<button onclick="window.print()">Print this page</button>
+<hr>
+<h1>Javascript Statement</h1>
+<p id="demo6"></p>
+<script>
+    let x, y, z;  // Statement 1
+    x = 5;        // Statement 2
+    y = 6;        // Statement 3
+    z = x + y;    // Statement 4
+    
+    document.getElementById("demo6").innerHTML =
+    "The value of z is " + z + ".";  
+    </script>
+<hr>
+<h2>JavaScript Statements</h2>
+
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo7"></p>
+<p id="demo8"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo7").innerHTML = "Hello Dolly!";
+  document.getElementById("demo8").innerHTML = "How are you?";
+}
+</script>
+ 
+<hr>
+<h1>Javascript Number</h1>
+<p id="demo9"></p>
+<script>
+    document.getElementById("demo9").innerHTML= 10.5;
+</script>
+
+<hr>
+<h1>javascript strings</h1>
+<p>string is written im single or double quote.</p>
+<p id="demo10"></p>
+<script>
+    document.getElementById("demo10").innerHTML = 'hello';
+</script>
+
+<hr>
+<h1>
+    variable declaration
+</h1>
+<p id="demo11"></p>
+<script>
+    let = x;
+    x = 6;
+    document.getElementById("demo11").innerHTML = x;
+</script>
+<hr>
+<h1>javascript operator</h1>
+<p id="demo12"></p>
+<script>
+    document.getElementById("demo12").innerHTML = (5 + 5) * 10;
+
+</script>
+
+<hr>
+<h1>Javascript Expression</h1>
+<p id="demo13"></p>
+<script>
+    document.getElementById("demo13").innerHTML = "Bansari" + " " + "Parmar";
+</script>
+<hr>
+<h1>Javascript is case sensitive</h1>
+<p> let try a java case sensitive between LastName and lastname </p>
+<p id="demo14">
+
+</p>
+<script>
+    let  LastName, lastname;
+    LastName = "Bansari";
+    lastname = "Parmar";
+
+    document.getElementById("demo14").innerHTML = lastname;
+</script>
+<hr>
+<h1>
+    Mixed declaration
+</h1>
+<p id="demo15"></p>
+<script>
+    const price1 = 5;
+    const price2 = 5;
+    let total = price1 + price2;
+
+    document.getElementById("demo15").innerHTML = "the sum  is: "+ total;
+    
+    </script>
+    <hr>
+    <h1>JavaScript Variables</h1>
+
+<p>Strings are written with quotes.</p>
+<p>Numbers are written without quotes.</p>
+
+<p id="demo16"></p>
+
+<script>
+const pi = 3.14;
+let person = "Bansari Parmar";
+let answer = 'Yes I am!';
+
+document.getElementById("demo16").innerHTML =
+pi + "<br>" + person + "<br>" + answer;
+</script>
+
+<hr>
+<h1>JavaScript Variables</h1>
+
+<p>You can declare many variables in one statement.</p>
+
+<p id="demo17"></p>
+
+<script>
+let Name = "John Doe", carName = "Volvo", price = 200;
+document.getElementById("demo17").innerHTML = carName;
+</script>
+<hr>
+<h1>JavaScript Variables</h1>
+
+<p>The result of adding "5" + "2" + "3" is:</p>
+<p id="demo18"></p>
+
+<script>
+let x1 = "5" + "2" + "3";
+document.getElementById("demo18").innerHTML = x1;
+</script>
+<hr>
+
+<h1>JavaScript Variables</h1>
+
+<p>The dollar sign is treated as a letter in JavaScript names.</p>
+
+<p id="demo19"></p>
+
+<script>
+let $$$ = 2;
+let $myMoney = 5;
+document.getElementById("demo19").innerHTML = $$$ + $myMoney;
+</script>
+
+<hr>
+<h1>JavaScript Variables</h1>
+
+<p>The underscore is treated as a letter in JavaScript names.</p>
+
+<p id="demo20"></p>
+
+<script>
+let _x = 2;
+let _100 = 5;
+
+document.getElementById("demo20").innerHTML = _x + _100;
+</script>
+
+<hr>
+<h1>JavaScript String Operators</h1>
+<h2>The += Operator</h2>
+<p>The assignment operator += can concatenate strings.</p>
+
+<p id="demo21"></p>
+
+<script>
+let text1 = "What a very ";
+text1 += "nice day";
+document.getElementById("demo21").innerHTML = text1;
+</script>
+
+<hr>
+<h2>JavaScript</h2>
+
+<p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+
+<p id="demo22"></p>
+
+<script>
+let x2 = 16 + 4 + "Volvo";
+document.getElementById("demo22").innerHTML = x2;
+</script>
+
+<hr>
+<h2>JavaScript Numbers</h2>
+
+<p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+
+<p id="demo23"></p>
+
+<script>
+let y3 = 123e5;
+let z3 = 123e-5;
+
+document.getElementById("demo23").innerHTML =
+y3 + "<br>" + z3;
+</script>
+
+<hr>
+<h2>JavaScript Booleans</h2>
+
+<p>Booleans can have two values: true or false:</p>
+
+<p id="demo24"></p>
+
+<script>
+let xa = 5;
+let ya= 5;
+let za = 6;
+
+document.getElementById("demo24").innerHTML =
+(xa == ya) + "<br>" + (ya == za);
+</script>
+
+<hr>
+
+<h1>JavaScript Operators</h1>
+<h2>The typeof Operator</h2>
+<p>The typeof operator returns the type of a variable or an expression.</p>
+
+<p id="demo25"></p>
+
+<script>
+document.getElementById("demo25").innerHTML = 
+typeof "" + "<br>" +
+typeof 50 + "<br>" + 
+typeof "John Doe";
+</script>
+
+<hr>
+<h1>Javascript Function</h1>
+<p id="demo26"></p>
+
+<script>
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+
+let result = myFunction(4, 3);
+document.getElementById("demo26").innerHTML = result;
+</script>
+
+<hr>
+<h1>JavaScript Functions</h1>
+
+<p>Outside myFunction() carName is undefined.</p>
+
+<p id="demo27"></p>
+<p id="demo28"></p>
+
+<script>
+let text = "Outside: " + typeof carName;
+document.getElementById("demo27").innerHTML = text;
+
+function myFunction() {
+  let carName = "Volvo";
+  let text = "Inside: " + typeof carName + " " + carName; 
+  document.getElementById("demo28").innerHTML = text;
+}
+
+myFunction();
+</script>
+<hr>
+<h2>JavaScript Objects</h2>
+
+<p id="demo29"></p>
+
+<script>
+// Create an object:
+const car = {type:"Fortuner", model:"500", color:"Black"};
+
+// Display some data from the object:
+document.getElementById("demo29").innerHTML = "The car type is " + car.type;
+</script>
+<hr>
+
+<h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+
+<button onclick="document.getElementById('demo29').innerHTML=Date()">The time is?</button>
+
+<p id="demo29"></p>
+<hr>
+
+<h1>JavaScript Strings</h1>
+<h2>The length Property</h2>
+
+<p>The length of the string is:</p>
+<p id="demo30"></p>
+
+<script>
+let Text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo30").innerHTML = Text.length;
+</script>
+
+<hr>
+<h1>JavaScript Template Strings</h1>
+<p>Templates allow multiline strings:</p>
+
+<p id="demo31"></p>
+
+<p>Templates are not supported in Internet Explorer.</p>
+
+<script>
+let text2 =
+
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+
+document.getElementById("demo31").innerHTML = text2;
+</script>
+<hr>
+
+<h1>JavaScript String</h1>
+<h2>The charAt() Method</h2>
+
+<p>The charAt() method returns the character at a given position in a string:</p>
+
+<p id="demo32"></p>
+
+<script>
+var text3 = "HELLO WORLD";
+document.getElementById("demo32").innerHTML = text3.charAt(6);
+</script>
+
+<hr>
+<h1>JavaScript String</h1>
+<h2>The charCodeAt() Method</h2>
+
+<p>The charCodeAt() method returns the unicode of the character at a given position in a string:</p>
+
+<p id="demo33"></p>
+
+<script>
+let text4 = "HELLO WORLD";
+document.getElementById("demo33").innerHTML = text4.charCodeAt(1);
+</script>
+<hr>
+<h1>JavaScript Strings</h1>
+<h2>The at() Method</h2>
+
+<p>The at() method returns an indexed element from a string:</p>
+
+<p id="demo34"></p>
+
+<script>
+const name = "W3Schools";
+let letter = name.at(2);
+
+document.getElementById("demo34").innerHTML = letter;
+</script>
+
+    </body>
+</html>
